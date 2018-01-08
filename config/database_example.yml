@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  min_messages: warning
+
+development:
+  <<: *default
+  database: qbs_development
+  username: username
+  password: password
+
+test:
+  <<: *default
+  database: qbs_test
+  username: username
+  password: password
