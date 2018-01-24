@@ -89,5 +89,5 @@ end
 ```
 config.autoload_paths << Rails.root.join('lib')
 ```
-**AND YOU ARE ALL SET TO GO**
+**AND YOU ARE ALL SET TO GO.**
 **I HAVE INTENTIONALLY LEFT THE REGISTRATION CONFIGURATION FOR YOU TO CONFIGURE**
