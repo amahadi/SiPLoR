@@ -40,7 +40,7 @@ gem 'devise'
 gem 'cancan'
 gem 'draper'
 gem 'pundit'
-gem 'paperclip', '~> 5.0.0'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
