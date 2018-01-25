@@ -18,7 +18,7 @@
       </li>
     <% end %>
    ```
-1. Now we need a single controller and view to render the registration and login form. Let us create a new controller and view(in my case `contents_controller` and `contents#new`). Now copy and paste(cause we love it) the contents of app/views/users/registrations/new.html.erb and app/views/users/sessions/new.html.erb to app/views/contents/new.html.erb(only if you follow me blindly otherwise different) respectively. Now your views should not find resources. To fix this following code to your app/helpers/contents_helper.rb
+1. Now we need a single controller and view to render the registration and login form. Let us create a new controller and view(in my case `contents_controller` and `contents#new`). Now copy and paste(cause we love it) the contents of app/views/users/registrations/new.html.erb and app/views/users/sessions/new.html.erb to app/views/contents/new.html.erb(only if you follow me blindly otherwise different) respectively. Now your views should not find resources. To fix this, add following code to your app/helpers/contents_helper.rb
    ```
     module ContentsHelper
       def resource_name
@@ -90,4 +90,4 @@
    config.autoload_paths << Rails.root.join('lib')
    ```
 ##### AND YOU ARE ALL SET TO GO.
-##### I HAVE INTENTIONALLY LEFT THE REGISTRATION CONFIGURATION FOR YOU TO CONFIGURE**
+##### I HAVE INTENTIONALLY LEFT THE REGISTRATION CONFIGURATION FOR YOU TO CONFIGURE.
