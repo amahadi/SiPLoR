@@ -51,7 +51,7 @@ A demo application for single page login registration using devise and without o
 #### And it is all set to login and register!!! This is that easy!!!! The hard part begins now.
 #### The following cases should be realized. These are discussed and the way to overcome them are shown in the steps to follow.
 
-1. When user log out, user do not get redirected to the `content#new` rather it is redicted to `sessions#new`. To Overcome that add the following code to your `app/controllers/application_controller.rb`
+1. When user logs out, the browser does not get redirected to the `content#new` rather it is redicted to `sessions#new`. To Overcome that add the following code to your `app/controllers/application_controller.rb`
    ```ruby
    protect_from_forgery with: :exception
 
@@ -63,7 +63,7 @@ A demo application for single page login registration using devise and without o
      end
    end
    ```
-1. When there is some sort of failure in logging in, it does not get redirected to the `content#new` rather it is redicted to `sessions#new`. Following steps should overcome it.
+1. When there is some sort of failure in login process, it does not get redirected to the `content#new` rather it is redicted to `sessions#new`. Following steps should overcome it.
    1. Create `lib/custom_failure.rb` and add the following code
       ```ruby
       class CustomFailure < Devise::FailureApp
