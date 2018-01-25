@@ -81,11 +81,11 @@ See it working at https://single-page-signup-signin.herokuapp.com/
          end
       ```
    1. Configure the `config/initializers/devise.rb` with the following
-     ```
-        config.warden do |manager|
-        manager.failure_app = CustomFailure
-        end
-     ```
+      ```
+         config.warden do |manager|
+         manager.failure_app = CustomFailure
+         end
+      ```
    1. Now add the library file to the `config/application.rb`
       ```
          config.autoload_paths << Rails.root.join('lib')
