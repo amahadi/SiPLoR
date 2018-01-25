@@ -35,7 +35,7 @@ A demo application for single page login registration using devise and without o
      end
    end
    ```
-1. Now some housekeeping stuffs. First of all generate `RegistrationsController` that inherits `Devise::RegistrationsController` and `SessionsController` that inherits `Devise::SessionsController`. Configure the routes.rb like the following.
+1. Now some housekeeping stuffs. First of all generate `RegistrationsController` that inherits `Devise::RegistrationsController` and `SessionsController` that inherits `Devise::SessionsController`. Configure the `routes.rb` like the following.
    ```ruby
    Rails.application.routes.draw do
       root to: 'dashboards#show'
